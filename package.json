@@ -1,0 +1,17 @@
+{
+  "name": "quickTranslator",
+  "version": "1.0.0",
+  "description": "Google翻訳がデスクトップに常駐",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "electron": "^3.0.10",
+    "electron-packager": "^12.2.0",
+    "nedb": "^1.8.0"
+  }
+}

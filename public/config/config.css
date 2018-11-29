@@ -1,0 +1,42 @@
+#dragHeader{
+	position: absolute;
+	top:0;
+	left:0;
+	width: 100%;
+	height: 20px;
+	-webkit-app-region: drag;
+}
+.popupWindow{
+	position: absolute;
+	border: solid 2px #ccf;
+	/* border-radius: 40px; */
+	border-radius: 0 40px 40px 40px;
+	padding: 30px;
+	padding-bottom: 10px;
+	padding-top: 20px;
+	display: inline-block;
+	background: -webkit-gradient(linear, left top, right bottom, from(rgba(234,234,255,1)),to(rgba(224,224,255,1)));
+	box-shadow: 3px 3px 3px 3px rgba(0,0,0,0.1);
+	width: calc(95% - 50px);
+	height: calc(95% - 50px);
+	top: 2px;
+	/* bottom: 0; */
+	left: 2px;
+	/* right: 0; */
+	margin: auto;
+}
+.popupWindow .popupDashed{
+	position: absolute;
+	border: dashed 3px #bbe;
+	/* border-radius: 38px; */
+	border-radius: 0px 38px 38px 38px;
+	width: calc(100% - 14px);
+	height: calc(100% - 14px);
+	top: 4px;
+	left: 4px;
+	pointer-events: none;
+}
+
+.popupWindow *{
+	max-width: 100%;
+}

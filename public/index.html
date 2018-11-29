@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>google translation</title>
+  <style media="screen">
+  body{
+    overflow: hidden;
+    margin: 0;
+  }
+  #dragHeader{
+  	position: fixed;
+  	top:0;
+  	left:0;
+  	width: 100%;
+  	height: 15px;
+  	-webkit-app-region: drag;
+  }
+  </style>
+</head>
+<body>
+  <div id="dragHeader"></div>
+  <webview id="foo" src="https://translate.google.com/?hl=ja#en/ja/" style="width:100vw;height:100vh;opacity:0.8" preload="fiddle.js" nodeintegration></webview>
+</body>
+<script>
+const nedb=require(__dirname+"/../node_modules/nedb")
+require('../renderer.js')
+</script>
+<script src="index.js"></script>
+</html>
