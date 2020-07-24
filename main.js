@@ -99,6 +99,7 @@ var template = [{
         { label: "Copy", accelerator: "CmdOrCtrl+C", selector: "copy:" },
         { label: "Paste", accelerator: "CmdOrCtrl+V", selector: "paste:" },
         { label: "Select All", accelerator: "CmdOrCtrl+A", selector: "selectAll:" },
+        { label: "Open Dev Tools", accelerator: "Cmd+Alt+I", click: function() {mainWindow.openDevTools();} },
 
     ]}
 ];
